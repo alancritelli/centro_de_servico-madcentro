@@ -27,15 +27,21 @@
 
         <div class="menu">
           <ul>
-            <li><a onclick="closeMenu()" href="">Início</a></li>
-            <li><a onclick="closeMenu()" href="">Serviços</a></li>
-            <li><a onclick="closeMenu()" href="">Unidades</a></li>
-            <li><a onclick="closeMenu()" href="">Fale Conosco</a></li>
+            <li><a onclick="closeMenu()" href="#home">Início</a></li>
+            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#stores">Unidades</a></li>
+            <li><a onclick="closeMenu()" href="#contactus">Fale Conosco</a></li>
 
             <a href="" class="button" onclick="closeMenu()"
               >Falar com Especialista</a
             >
           </ul>
+
+          <div class="social">
+            <a href=""><i class="icon-youtube"></i></a>
+            <a href=""><i class="icon-instagram"></i></a>
+            <a href=""><i class="icon-facebook"></i></a>
+          </div>
         </div>
 
         <button
@@ -135,7 +141,7 @@
               </div>
 
               <div class="card">
-                <h3>🟧 Controle de qualidade </h3>
+                <h3>🟧 Controle de qualidade</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Adipisci fuga repudiandae impedit ut! Voluptatem
@@ -145,7 +151,7 @@
               </div>
 
               <div class="card">
-                <h3>🟧 Expedição </h3>
+                <h3>🟧 Expedição</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Adipisci fuga repudiandae impedit ut! Voluptatem
@@ -157,7 +163,105 @@
           </div>
         </div>
       </section>
+
+      <section id="stores">
+        <div class="wrapper">
+          <header>
+            <h4>Nossas unidades 🗺️</h4>
+            <p>
+              Caso queira um atendimento personalizado presencial, temos lojas
+              em Sorocaba, Itu e Jundiai. E se quiser conhecer nosso
+              <strong>Centro de Serviço</strong>, basta vir na loja de sorocaba
+              que te mostramos tudo.
+            </p>
+          </header>
+
+          <div class="content">
+            <div class="lojasorocaba">
+              <a href="https://www.gmad.com.br/madcentro" target="_blank"
+                ><img
+                  src="assets/img/macentroSorocaba.jpg"
+                  alt="Loja Madcentro de Sorocaba"
+              /></a>
+              <p>
+                📍 R. Terêncio Costa Dias, 838 - Jardim Bertanha, Sorocaba - SP,
+                18052-200
+              </p>
+              <p>🕝 De segunda à sexta-feira: 8h às 18h.</p>
+
+              <p>☎️ (15) 4009-5200</p>
+            </div>
+
+            <div class="lojaitu">
+              <a
+                href="https://www.gmad.com.br/gmad-madcentroitu"
+                target="_blank"
+                ><img
+                  src="assets/img/madcentroItu.webp"
+                  alt="Loja Madcentro de Itu"
+              /></a>
+              <p>
+                📍 Av. Caetano Ruggieri, 3996 - Parque das Rosas, Itu - SP,
+                13310-600
+              </p>
+              <p>🕝 De segunda à sexta-feira: 7h30 às 17h30.</p>
+
+              <p>☎️ (11) 2429-6446</p>
+            </div>
+
+            <div class="lojajundiai">
+              <a
+                href="https://www.gmad.com.br/gmad-madcentrojundiai"
+                target="_blank"
+                ><img
+                  src="assets/img/madcentroJundiai.webp"
+                  alt="Loja Madcentro de Jundiai"
+              /></a>
+              <p>
+                📍 Av. Quatorze de Dezembro, 2890 - Vila Mafalda, Jundiaí - SP,
+                13206-105
+              </p>
+              <p>🕝 De segunda à sexta-feira: 8h às 18h.</p>
+
+              <p>☎️ (11) 4588-3500</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactus">
+        <div class="wrapper">
+          <header>
+            <h4>Fale Conosco 💬</h4>
+            <p>
+              Ficou com alguma duvida, precisa de ajuda ou gostaria de fazer um
+              orçamento? Fale conosco!
+            </p>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=5515988119443&text&type=phone_number&app_absent=0"
+              target="_blank"
+              class="button"
+            >
+              <i class="icon-whatsapp"></i>whatsapp
+            </a>
+          </header>
+        </div>
+      </section>
+
+      <footer>
+        <a href="#home"
+          ><img src="assets/img/Logo Lojalogo.svg" alt="Logo Madcentro"
+        /></a>
+
+        <div class="brand">
+          <p>©Gmad Madcentro</p>
+          <p>Todos direitos reservados</p>
+        </div>
+      </footer>
     </main>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
 
     <script src="main.js"></script>
   </body>

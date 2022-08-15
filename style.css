@@ -69,6 +69,10 @@ img {
   transition: background 200ms;
 }
 
+section {
+  padding-block: 10rem;
+}
+
 section h4 {
   text-transform: uppercase;
   color: var(--text-color);
@@ -200,6 +204,12 @@ body.menu-expanded .logo span {
   color: white;
 }
 
+body.menu-expanded .social i {
+  font-size: 3rem;
+  color: white;
+  margin-right: 2rem;
+}
+
 /*-----------HOME------------*/
 section#home .wrapper {
   padding-top: 10rem;
@@ -234,10 +244,54 @@ section#home .wrapper {
 
   background: white;
 
-  border: 1px solid var(--brand-light);
+  border-bottom: 2px solid var(--primary-color);
   border-radius: 0.6rem;
 }
 
 #services .card h3 {
   margin-block: 1.6rem;
+}
+
+/*-----------STORES------------*/
+#stores img {
+  max-width: 40rem;
+  height: 30rem;
+
+  margin-bottom: 1rem;
+}
+
+.lojasorocaba p,
+.lojaitu p,
+.lojajundiai p {
+  text-align: left;
+  margin: 1rem auto;
+  width: 35rem;
+}
+
+.lojasorocaba,
+.lojaitu,
+.lojajundiai {
+  margin-bottom: 4rem;
+}
+
+/*-----------CONTACTUS------------*/
+#contactus p {
+  width: 35rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+#contactus i {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+/*-----------FOOTER------------*/
+footer {
+  display: grid;
+  justify-content: center;
+}
+
+footer p {
+  text-align: left;
 }

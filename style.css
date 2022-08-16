@@ -254,7 +254,7 @@ section#home .wrapper {
 
 /*-----------STORES------------*/
 #stores img {
-  margin-inline: 1rem;
+  margin-block: 1rem;
 }
 
 .lojasorocaba p,

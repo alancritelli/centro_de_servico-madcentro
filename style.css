@@ -220,6 +220,10 @@ section#home .wrapper {
   box-shadow: 15px 15px var(--text-color);
 }
 
+#home img {
+  max-width: 41.5rem;
+}
+
 .content .button {
   margin-top: 2rem;
   background-color: var(--primary-color);

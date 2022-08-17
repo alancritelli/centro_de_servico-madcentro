@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora do Marceneiro | GMAD Madcentro</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="internas page-planos">
+        <div class="head-intro"></div>
+        <div class="default-intro">
+          <div class="content-wrap"></div>
+          <div class="clear"></div>
+
+          <div class="page-content clearfix">
+            <div class="col-md-5">
+              <div class="txt-intro no-print">
+                <h2>Produzir ou Terceirizar?</h2>
+                <div style="margin: 10px">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum laudantium, harum debitis odio ut blanditiis minus
+                    facilis officia, temporibus vitae velit? Voluptate adipisci
+                    asperiores aliquam minus excepturi laudantium fugiat animi!
+                  </p>
+                </div>
+                <h3>
+                  Preencha os campos de despesas e receita bruta, para calcular
+                  seu custo operacional.
+                </h3>
+              </div>
+              <div
+                class="txt-intro"
+                style="
+                  border-top: 1px dashed #ccc;
+                  margin-top: 20px;
+                  padding: 10px 5px;
+                "
+              >
+                <h3 style="color: #1d6917"> Receita Bruta (Vendas/Serviços)</h3>
+                <div style="margin: 10px">
+                  <input
+                    type="text"
+                    value="0.00"
+                    class="input"
+                    name="receita"
+                    id="receita"
+                    data-rel="decimal"
+                    style="
+                      font-size: 18px;
+                      text-align: center;
+                      font-weight: bold;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="calculadora-valor" style="display: none">
+                <h3>Seu custo operacional é:</h3>
+                <h2>
+                  <span class="moeda">...</span><span> <b>%</b></span>
+                </h2>
+                <span style="line-height: 15px; display: block"
+                  >* o percentual acima corresponde ao custo para operacão de
+                  seu negócio, devendo ser considerado no momento da formação de
+                  preços de seus produtos e/ou serviços.</span
+                >
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="form-calculadora">
+                <h2 class="verde" style="font-size: 24px; margin-bottom: 10px">
+                  Custos de produção
+                </h2>
+                <h3>Informe uma média dos seus custos de produção.</h3>
+                <ul>
+                  <li class="active">
+                    <div class="title">Energia</div>
+                    <div class="sub-title">
+                      média de gastos com energia mensal
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">Água</div>
+                    <div class="sub-title">média de gastos com água mensal</div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+               
+                  <li>
+                    <div class="title">Aluguel</div>
+                    <div class="sub-title">
+                      informe o valor do aluguel comercial.
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+                </ul>
+
+                
+                <h3>Com relação as despesas essencias</h3>
+                <ul>
+                  <li>
+                    <div class="title">Folha Pagamento</div>
+                    <div class="sub-title">
+                      média da folha de pagamento dos colaboradores
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                        id="folhapagamento"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">Pró-labore</div>
+                    <div class="sub-title">
+                      retirada mensal dos sócios, pelo trabalho executado na
+                      empresa
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">Seguros</div>
+                    <div class="sub-title">
+                      despesa com seguros de vida, imóvel, empresa e etc.
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                
+                <h3>Outros Adicionais</h3>
+                <ul>
+                  <li>
+                    <div class="title">Outras Despesas</div>
+                    <div class="sub-title">
+                      outras despesas não relacionadas anteriormente
+                    </div>
+                    <div style="position: relative">
+                      <input
+                        type="text"
+                        value="0.00"
+                        class="input"
+                        name="despesas[]"
+                        data-rel="decimal"
+                      />
+                    </div>
+                  </li>
+                </ul>
+                <button
+                  class="btn btn-warning"
+                  onclick="$('#receita').focus();"
+                  style="width: 100%; display: block; margin-bottom: 10px"
+                >
+                  CONCLUIR
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery.maskMoney.js"></script>
+
+    <script>
+      function totaliza(){
+          
+          var tmp = 0;
+          
+          var v1 = $('#receita').val().replace('R$ ','');
+          var receita = parseFloat(v1.replace(/\s+/g, ''));
+          
+          //encargos folha / adicional 30% 13°, ferias, recições.
+          var v2 = $('#folhapagamento').val().replace('R$ ','');
+          var folha = (parseFloat(v2.replace(/\s+/g, '')) * 0.3);
+          
+      
+         $("input[name^='despesas']").each(function(e) {
+              var val = $(this).val().replace('R$ ','');
+              var temp = parseFloat(val.replace(/\s+/g, ''));
+              
+              if(temp!='0.00' && temp!='' && temp!='NaN' && temp!='0'){
+                 tmp +=temp;
+                 }
+          });
+          
+          if(tmp>0 && receita>0){
+              $('.calculadora-valor').show();
+              
+              if(folha>0){
+                 console.log('Adicional Folha: ' + folha);
+                  tmp +=folha;
+                 }
+              
+              var percent=((tmp/receita)*100);
+              if(percent>=100){
+                      $('.calculadora-valor .moeda').html('<span style="color:red;">ERRO! DESPESAS ACIMA 100</span>');
+                 }else{
+                     $('.calculadora-valor .moeda').text(percent.toFixed(1));
+                 }
+          }
+          //console.log(tmp);
+      }
+      $(document).ready(function(){
+          
+          $('[data-rel=decimal]').maskMoney({ prefix:'R$ ', allowZero: true, decimal: '.', thousands: ' ', precision: 2 });
+              
+          $('.internas ul li').focus(function(){
+              $('.internas ul li').removeClass('active');
+              $(this).parents('li').addClass('active');
+          });
+          
+          $('input[type="text"], #receita').on('keyup',function(e) {
+              totaliza();
+          });
+          
+      });
+      </script>
+  </body>
+</html>

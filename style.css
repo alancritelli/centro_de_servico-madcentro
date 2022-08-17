@@ -125,6 +125,14 @@ nav span {
   color: var(--text-color);
 }
 
+nav.scroll {
+  background: var(--primary-color);
+}
+
+nav.scroll span {
+  color: white;
+}
+
 nav button {
   background: none;
   border: none;
@@ -258,6 +266,7 @@ section#home .wrapper {
 
 /*-----------STORES------------*/
 #stores img {
+  width: 41.5rem;
   margin-block: 1rem;
 }
 
@@ -295,4 +304,30 @@ footer {
 
 footer p {
   text-align: left;
+}
+
+/*======== BACK TO TOP ========*/
+#backToTopButton {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 3rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton i {
+  font-size: 4.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }

@@ -7,9 +7,6 @@ function onScroll() {
   showBackToTopButtonOnScroll()
 
   activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(jobs)
-  activateMenuAtCurrentSection(testimonials)
-
 }
 
 function activateMenuAtCurrentSection(section) {

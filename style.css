@@ -519,6 +519,22 @@ footer .brand {
   }
 
   /*======== STORES ========*/
-  
+  #stores .store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #stores .lojajundiai,
+  #stores .lojasorocaba {
+    width: 30%;
+  }
+
+  #stores .lojaitu {
+    width: 33%;
+  }
+
+  /*======== STORES ========*/
+
 
 }

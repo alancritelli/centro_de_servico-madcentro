@@ -300,6 +300,15 @@ footer {
   padding-block: 6.4rem;
 }
 
+footer .logo {
+  font-size: 3.2rem;
+  color: white;
+}
+
+footer .brand {
+  margin-top: 2.4rem;
+}
+
 /*======== BACK TO TOP ========*/
 #backToTopButton {
   position: fixed;

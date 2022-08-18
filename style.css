@@ -275,7 +275,6 @@ section#home .wrapper {
 .lojajundiai p {
   text-align: left;
   margin: 1rem auto;
-  width: 35rem;
 }
 
 .lojasorocaba,
@@ -286,9 +285,11 @@ section#home .wrapper {
 
 /*-----------CONTACTUS------------*/
 #contactus p {
-  width: 35rem;
-  margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+#contactus .button {
+  width: 31rem;
 }
 
 #contactus i {
@@ -298,13 +299,10 @@ section#home .wrapper {
 
 /*-----------FOOTER------------*/
 footer {
-  display: grid;
-  justify-content: center;
+  background-color: var(--primary-color);
+  padding-block: 6.4rem;
 }
 
-footer p {
-  text-align: left;
-}
 
 /*======== BACK TO TOP ========*/
 #backToTopButton {

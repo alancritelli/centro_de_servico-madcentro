@@ -7,6 +7,9 @@ function onScroll() {
   showBackToTopButtonOnScroll()
 
   activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(stores)
+  activateMenuAtCurrentSection(contactus)
 }
 
 function activateMenuAtCurrentSection(section) {

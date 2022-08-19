@@ -535,5 +535,12 @@ footer .brand {
     width: 33%;
   }
 
-  /*======== STORES ========*/
+  /*======== CONTACTUS ========*/
+  #contactus .wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #contactus header {
+  }
 }

@@ -7,77 +7,57 @@
   text-decoration: none;
 }
 
+:root {
+  --hue: 138;
+  --bg-color: hsl(var(--hue), 16%, 89%);
+  --primary-color: hsl(var(--hue), 56%, 26%);
+  --text-color: hsl(11, 80%, 59%);
+
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: #000000;
   font-weight: 400;
   height: 100%;
-  background: #ffffff;
+  background: var(--bg-color);
 }
 
-.content-wrap {
-  width: 95%;
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1200px;
-}
-
-/* ----------- IntroduÃ§Ã£o ----------- */
-
+/*==========INTRO============*/
 .internas {
-  padding: 30px 0 0 0;
+  padding: 3rem;
   transition: all 0.5s;
-  -moz-transition: all 0.5s; /* Firefox 4 */
-  -webkit-transition: all 0.5s;
 }
 
-.paginas .page-content h1,
-.paginas .page-content h2,
-.paginas .page-content h3 {
+.txt-intro h2,
+.txt-intro h1 {
+  font-size: 3.6rem;
   color: #333;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.paginas .txt-intro h2,
-.internas .txt-intro h2,
-.internas .txt-intro h1 {
-  font-size: 44px;
-  color: #333;
-  line-height: 57px;
+  line-height: 5.7rem;
   font-weight: 900;
-  margin: 0 0 15px 0;
 }
 
-.internas .txt-intro p {
-  font-size: 20px;
+.txt-intro p {
+  font-size: 1.8rem;
   color: #313131;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 0 0 15px 0;
-  /*max-width: 400px;*/
 }
 
-.head-intro {
-  padding: 0px 0 50px 0;
-}
-
-.default-intro .calculadora-valor {
-  max-width: 400px;
-  padding: 0px 30px 10px 20px;
+/*==========CALCULADORA============*/
+.calculadora-valor {
+  max-width: 49.5rem;
+  margin: 0 auto;
+  padding: 2rem;
   overflow: unset;
-  box-shadow: 0px 1px 3px 0.5px rgb(0 0 0 / 16%);
-  border: 5px solid rgb(22, 159, 96);
+  border: 8px solid var(--primary-color);
   text-align: center;
-  margin: 20px;
   background: #fff;
 }
 
-.default-intro .plano-valor .moeda,
-.default-intro .calculadora-valor .moeda {
-  font-size: 60px;
+.calculadora-valor .moeda {
+  font-size: 8rem;
   font-weight: bold;
-  color: #169839;
+  color: var(--text-color);
 }
 
 .internas .form-calculadora .sub-title {
